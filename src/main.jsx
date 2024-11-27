@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router";
 import './index.css'
 import Frontpage from './Components/Frontpage.jsx'
 
+
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <BrowserRouter>
