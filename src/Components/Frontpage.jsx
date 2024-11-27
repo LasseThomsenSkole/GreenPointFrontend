@@ -17,28 +17,39 @@ export default function Frontpage() {
 
                 <nav className="mr-2">
                     <ul className="flex space-x-4">
+
                         <li className="mt-5 mr-8"><DropdownMenu>
                             <DropdownMenuTrigger asChild>
                                 <a className="hover:text-gray-200 text-2xl font-bold">Quicklinks</a>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent className="text-4xl">
-                                <DropdownMenuItem><a>Nødsituationer</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>Digital rekvisition</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>B2B</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>Scalepoint</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>InMoment</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>Resurs Bank</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>Teamviewer</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>ServiceNow</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>DAO</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>myDHL+</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>Lokal Marketing</a></DropdownMenuItem>
-                                <DropdownMenuItem><a>Harmony</a></DropdownMenuItem>
+                            <DropdownMenuContent className="text-2xl">
+                                <div className="block w-full">
+                                <DropdownMenuItem><a>Nødsituationer</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a>Digital rekvisition</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a>B2B</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a>Scalepoint</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a>InMoment</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a>Resurs Bank</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a>Teamviewer</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a>ServiceNow</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a href="https://omdeling.info/leveringerleverandoerstatus/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">DAO</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a>myDHL+</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a>Lokal Marketing</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a>Harmony</a></DropdownMenuItem><DropdownMenuSeparator />
                                 <DropdownMenuItem><a href="http://intranet/daglig.php"
                                                      target="_blank"
                                                      rel="noopener noreferrer">Daglig omsætning</a></DropdownMenuItem>
+                                </div>
                             </DropdownMenuContent>
                         </DropdownMenu></li>
+
+                        <li className="mt-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-12">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                        </svg>
+                        </li>
 
                         <li><DropdownMenu>
                             <DropdownMenuTrigger asChild>
@@ -53,8 +64,10 @@ export default function Frontpage() {
                                 <DropdownMenuItem>Profil</DropdownMenuItem>
                                 <DropdownMenuSeparator />
                                 <DropdownMenuItem>Kalender</DropdownMenuItem>
+                                <DropdownMenuSeparator />
                                 <DropdownMenuItem>Kurser</DropdownMenuItem>
-                                <DropdownMenuItem>Halli hallo</DropdownMenuItem>
+                                <DropdownMenuSeparator />
+                                <DropdownMenuItem>Bibliotek</DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu></li>
                     </ul>
