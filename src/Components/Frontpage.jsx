@@ -28,18 +28,27 @@ export default function Frontpage() {
                                 <DropdownMenuItem><a>B2B</a></DropdownMenuItem><DropdownMenuSeparator />
                                 <DropdownMenuItem><a>Scalepoint</a></DropdownMenuItem><DropdownMenuSeparator />
                                 <DropdownMenuItem><a>InMoment</a></DropdownMenuItem><DropdownMenuSeparator />
-                                <DropdownMenuItem><a>Resurs Bank</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a href="https://merchantportal.resurs.com/login"
+                                                     target="_blank"
+                                                     rel="noopener noreferrer">Resurs Bank</a></DropdownMenuItem><DropdownMenuSeparator />
                                 <DropdownMenuItem><a>Teamviewer</a></DropdownMenuItem><DropdownMenuSeparator />
-                                <DropdownMenuItem><a>ServiceNow</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a href="https://specsavers.service-now.com/specsavers"
+                                                     target="_blank"
+                                                     rel="noopener noreferrer">ServiceNow</a></DropdownMenuItem><DropdownMenuSeparator />
                                 <DropdownMenuItem><a href="https://omdeling.info/leveringerleverandoerstatus/"
                                     target="_blank"
                                     rel="noopener noreferrer">DAO</a></DropdownMenuItem><DropdownMenuSeparator />
-                                <DropdownMenuItem><a>myDHL+</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a href="https://mydhl.express.dhl/dk/da/auth/login.html"
+                                                     target="_blank"
+                                                     rel="noopener noreferrer">myDHL+</a></DropdownMenuItem><DropdownMenuSeparator />
                                 <DropdownMenuItem><a>Lokal Marketing</a></DropdownMenuItem><DropdownMenuSeparator />
-                                <DropdownMenuItem><a>Harmony</a></DropdownMenuItem><DropdownMenuSeparator />
+                                <DropdownMenuItem><a href="https://louisnielsen.ths.cloud"
+                                                     target="_blank"
+                                                     rel="noopener noreferrer">Harmony</a></DropdownMenuItem><DropdownMenuSeparator />
                                 <DropdownMenuItem><a href="http://intranet/daglig.php"
                                                      target="_blank"
                                                      rel="noopener noreferrer">Daglig omsætning</a></DropdownMenuItem>
+                                    <DropdownMenuItem><a>Kontaktlinseleverandøre</a></DropdownMenuItem><DropdownMenuSeparator />
                                 </div>
                             </DropdownMenuContent>
                         </DropdownMenu></li>
