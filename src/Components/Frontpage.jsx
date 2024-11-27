@@ -11,13 +11,12 @@ export default function Frontpage() {
 
   return (
     <>
-        <header className="bg-[#007446] rounded-br-[280px_250px] rounded-bl-[3200px_250px] w-full p-6 text-white px-14">
-            <div className="justify-between flex items-center py-14">
-                <h1 className="text-5xl font-bold ml-40">GreenPoint</h1>
+        <header className="bg-[#007446] rounded-br-[280px_250px] rounded-bl-[3200px_250px] w-full p-2 text-white px-14">
+            <div className="justify-between flex items-center py-14 mb-14">
+                <h1 className="text-6xl font-bold ml-40">GreenPoint</h1>
 
                 <nav className="mr-2">
                     <ul className="flex space-x-4">
-
                         <li className="mt-5 mr-8"><DropdownMenu>
                             <DropdownMenuTrigger asChild>
                                 <a className="hover:text-gray-200 text-2xl font-bold">Quicklinks</a>
