@@ -27,7 +27,7 @@ export default function Login() {
                     const token = await response.text()
                     localStorage.setItem("jwtToken", token) //Todo lav om til at bruge httpOnly cookie
                 } else if(response.status === 403) {
-                    console.error("Login failed")
+                    console.error("Login failed") //Todo lav om til at vise en fejlbesked til brugeren
                 }
             }
         ).catch((error) => {
