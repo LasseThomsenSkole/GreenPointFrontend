@@ -64,3 +64,53 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Inside your global CSS file or within a <style> tag in your component */
+@layer utilities {
+  /* Scrollbar track */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background-color: #ffffff; /* Background color of the track */
+    border-radius: 4px;
+  }
+
+  /* Scrollbar thumb */
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1); /* Color of the thumb (the draggable part) */
+    border-radius: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Hover color */
+  }
+
+  /* Scrollbar corner (when two scrollbars meet) */
+  .scrollbar-thin::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  /* Custom scrollbar styles for the ScrollArea component */
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Background color of the track */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Color of the thumb (the draggable part) */
+    border-radius: 4px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Hover color */
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
+}
