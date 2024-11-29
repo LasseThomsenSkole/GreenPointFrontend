@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router";
 import './index.css'
 import Frontpage from './Components/Frontpage.jsx'
 import Login from './Components/Login.jsx'
-
+import Calendar from './Components/Calendar.jsx'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
