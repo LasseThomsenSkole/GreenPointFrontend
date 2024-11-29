@@ -82,7 +82,7 @@ export default function Frontpage() {
                                 </NavigationMenuList>
                             </NavigationMenu>
                             <div className="w-full h-full flex justify-center items-center object-cover">
-                                <Gif src="/briller.gif"/>
+                                <Gif src="/briller.gif"/> {/* det burde ikke være gif */}
                             </div>
                         </div>
                      </div>
