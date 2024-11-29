@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')).render(
             <Routes>
                 <Route path="/" element={<Frontpage/>}/>
                 <Route path="/login" element={<Login/>}/>
+                <Route path="/kalender" element={<Calendar/>}></Route>
             </Routes>
         </BrowserRouter>
     </StrictMode>,
