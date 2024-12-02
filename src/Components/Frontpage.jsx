@@ -4,11 +4,8 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import SearchBar from "@/Components/SearchBar.jsx";
 
 
 export default function Frontpage() {
@@ -16,9 +13,6 @@ export default function Frontpage() {
         <>
             <Header />
             <main>
-                <div className="ml-20 mr-20 mt-5">
-                    <SearchBar/>
-                </div>
                 <div className="ml-20 mr-20 justify-between flex gap-20">
                     <ScrollArea className="flex flex-col h-[75vh] w-1/3 rounded-xl p-4 bg-white overflow-y-auto scrollbar-thin">
                         <h1 className="text-4xl text-center p-4 font-bold text-[#003811]">Her er en nyheds titel måske der skal være flere</h1>
