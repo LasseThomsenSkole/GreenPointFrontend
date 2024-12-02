@@ -1,5 +1,5 @@
 import * as React from "react"
-import {Dialog, DialogContent, DialogProps} from "@radix-ui/react-dialog"
+import {Dialog, DialogContent} from "@radix-ui/react-dialog"
 import { Command as CommandPrimitive } from "cmdk"
 import { Search } from "lucide-react"
 
