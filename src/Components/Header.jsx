@@ -18,15 +18,8 @@ export default function Header() {
 
                 <nav className="mr-2">
                     <ul className="flex space-x-4">
-                        <li className="mt-3">
-                            <a href=""
-                               target="_blank"
-                               rel="noopener noreferrer" className="hover:text-[#009552]">
-                                <div className="search-box">
-                                    <button className="btn-search"><i className="fas fa-search"></i></button>
-                                    <input type="text" className="input-search" placeholder="Type to Search..."/>
-                                </div>
-                            </a>
+                        <li className="mt-6">
+                            <SearchBar/>
                         </li>
                         <li className="mt-6 mr-8"><DropdownMenu>
                             <DropdownMenuTrigger asChild>
