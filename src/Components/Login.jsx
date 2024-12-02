@@ -1,7 +1,7 @@
-import {Card, CardHeader, CardTitle, CardDescription, CardContent} from "@/components/ui/card"
-import {Label} from "@/components/ui/label"
-import {Input} from "@/components/ui/input"
-import {Button} from "@/components/ui/button"
+import {Card, CardHeader, CardTitle, CardDescription, CardContent} from "@/Components/ui/card.jsx"
+import {Label} from "@/Components/ui/label.jsx"
+import {Input} from "@/Components/ui/input.jsx"
+import {Button} from "@/Components/ui/button.jsx"
 import {useState} from "react";
 
 
