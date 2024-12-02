@@ -6,14 +6,15 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import SearchBar from "@/Components/SearchBar.jsx";
 
 export default function Header() {
 
     return (
         <header
-            className="bg-[#00693c] rounded-br-[330px_250px] rounded-bl-[3200px_250px] w-full p-2 text-white px-14 h-[16vh]">
-            <div className="justify-between flex items-center py-14 mb-14 mt-[-50px]">
-                <h1 className="text-6xl font-bold ml-56"><a href="/">GreenPoint</a></h1>
+            className="bg-[#00693c] rounded-bl-[330px_200px] rounded-br-[4000px_200px] w-full p-2 text-white px-14 h-[16vh]">
+            <div className="justify-between flex items-center py-3 mb-14">
+                <h1 className="text-6xl font-bold ml-10"><a href="/">GreenPoint</a></h1>
 
                 <nav className="mr-2">
                     <ul className="flex space-x-4">

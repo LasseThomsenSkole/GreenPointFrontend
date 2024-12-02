@@ -16,6 +16,9 @@ export default function Frontpage() {
         <>
             <Header />
             <main>
+                <div className="ml-20 mr-20 mt-5">
+                    <SearchBar/>
+                </div>
                 <div className="ml-20 mr-20 justify-between flex gap-20">
                     <ScrollArea className="flex flex-col h-[75vh] w-1/3 rounded-xl p-4 bg-white overflow-y-auto scrollbar-thin">
                         <h1 className="text-4xl text-center p-4 font-bold text-[#003811]">Her er en nyheds titel måske der skal være flere</h1>
@@ -31,9 +34,6 @@ export default function Frontpage() {
                             og her er endnu mere tekst for at teste scroll, nu hpber jeg sku det virker pls altså hvad fuck er der galt</p>
                     </ScrollArea>
                     <div className="flex-col w-2/3 mt-8">
-
-                        <SearchBar/>
-
 
                         <ScrollArea className="h-[30vh] rounded-xl p-4 overflow-y-auto scrollbar-thin scrollbar-custom bg-[#48B936] bg-opacity-20">
                         <h1 className="text-4xl text-center p-4 font-bold text-[#003811]">Nuværende kampagner</h1>
