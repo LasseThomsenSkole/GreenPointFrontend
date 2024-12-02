@@ -6,13 +6,13 @@ import {useState} from "react";
 
 
 export default function Login() {
-    const [userName, setUserName] = useState("")
+    const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
     async function handleSubmit(event) {
         event.preventDefault()
         const requestBody = {
-            username: userName,
+            username: email,
             password: password
         }
         await fetch("http://localhost:8080/auth/login", {
@@ -44,10 +44,10 @@ export default function Login() {
                 <form onSubmit={handleSubmit}>
                     <div className="space-y-4">
                         <div className="space-y-2">
-                            <Label htmlFor="email">Username</Label>
-                            <Input id="email" type="text" required
-                                   value={userName}
-                                   onChange={(e) => setUserName(e.target.value)}/>
+                            <Label htmlFor="email">Email</Label>
+                            <Input id="email" type="email" required
+                                   value={email}
+                                   onChange={(e) => setEmail(e.target.value)}/>
                         </div>
                         <div className="space-y-2">
                             <Label htmlFor="password">Password</Label>
