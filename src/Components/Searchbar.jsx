@@ -4,13 +4,13 @@ import {useState} from "react";
 
 export default function SearchBar({handleSearch}) {
     const [search, setSearch] = useState("")
-    /*
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(search)
         setSearch("") //reset search
         //redirect to search result page
-    }*/
+    }
 
     return (
         <form className={"flex "} onSubmit={handleSearch}>
