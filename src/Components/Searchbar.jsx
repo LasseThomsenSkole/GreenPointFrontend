@@ -12,6 +12,8 @@ export default function SearchBar({handleSearch}) {
         //redirect to search result page
     }
 
+
+
     return (
         <form className={"flex "} onSubmit={handleSearch}>
             <Input className={"mr-2 text-gray-700"} type={"text"} onChange={(e) => setSearch(e.target.value)} placeholder="Søg efter nyheder" />
