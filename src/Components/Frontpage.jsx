@@ -14,7 +14,7 @@ export default function Frontpage() {
             <Header />
             <main>
                 <div className="ml-20 mr-20 justify-between flex gap-20">
-                    <ScrollArea className="flex flex-col h-[75vh] w-1/3 rounded-xl p-4 bg-white overflow-y-auto scrollbar-thin">
+                    <ScrollArea className="flex flex-col h-[75vh] w-1/3 rounded-xl p-4 bg-white overflow-y-auto scrollbar-thin mt-8">
                         <h1 className="text-4xl text-center p-4 font-bold text-[#003811]">Her er en nyheds titel måske der skal være flere</h1>
                         <p className="text-2xl p-4 text-[#003811]">Sidste uge havde vi fornøjelsen af at invitere en gruppe af vores optometristuderende med til fabrikken i Ungarn 🤓
 
