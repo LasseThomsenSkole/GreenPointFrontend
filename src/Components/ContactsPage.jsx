@@ -1,7 +1,7 @@
 import Header from './Header.jsx'
 import {
     ContactsSearch
-} from "@/Components/ContactsInfo.jsx";
+} from "@/Components/ContactsSearch.jsx";
 
 
 
