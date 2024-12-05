@@ -91,6 +91,11 @@
   .scrollbar-thin::-webkit-scrollbar-corner {
     background-color: transparent;
   }
+
+
+
+
+
   /* Custom scrollbar styles for the ScrollArea component */
   .scrollbar-custom::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
@@ -110,6 +115,31 @@
   }
 
   .scrollbar-custom::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+
+
+
+
+  /* Custom scrollbar styles for the ScrollArea component */
+  .scrollbar-custom-courses::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+
+  .scrollbar-custom-courses::-webkit-scrollbar-track {
+    background-color: transparent; /* Background color of the track */
+  }
+
+  .scrollbar-custom-courses::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1); /* Color of the thumb (the draggable part) */
+    border-radius: 4px;
+  }
+
+  .scrollbar-custom-courses::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Hover color */
+  }
+
+  .scrollbar-custom-courses::-webkit-scrollbar-corner {
     background-color: transparent;
   }
 
