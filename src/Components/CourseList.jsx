@@ -94,6 +94,7 @@ export default function CourseList() {
 
     return (
         <>
+            {/*mangler buttons til tilmelding*/}
             <h1 className="text-4xl text-[#003811] font-bold mb-2">Kursusliste</h1>
             <ScrollArea className="scrollbar-custom-courses flex flex-col h-[75vh] w-full rounded-xl p-4 overflow-y-auto">
                 {coursesData.map((course, index) => (

@@ -16,9 +16,9 @@ export default function SearchBar(){
         <>
             <Command>
                 <CommandInput placeholder="Søg" />
-                <CommandList>
+                {/* <CommandList>
                     <CommandEmpty>Ingen resultater</CommandEmpty>
-                </CommandList>
+                </CommandList>*/}
             </Command>
         </>
     )

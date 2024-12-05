@@ -9,7 +9,7 @@ const Command = React.forwardRef(({ className, ...props }, ref) => (
     <CommandPrimitive
         ref={ref}
         className={cn(
-            "flex h-full w-full flex-col overflow-hidden rounded-md bg-popover text-popover-foreground",
+            "flex h-min w-[300px] flex-col overflow-hidden rounded-md bg-popover text-popover-foreground p-[1px] mt-[-6px]",
             className
         )}
         {...props}
@@ -30,7 +30,7 @@ const CommandDialog = ({ children, ...props }) => {
 }
 
 const CommandInput = React.forwardRef(({ className, ...props }, ref) => (
-    <div className="flex items-center border-b px-3" data-cmdk-input-wrapper="">
+    <div className="flex items-center" data-cmdk-input-wrapper="">
         <Search className="mr-2 h-4 w-4 shrink-0 opacity-50" />
         <CommandPrimitive.Input
             ref={ref}
