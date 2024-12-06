@@ -12,7 +12,7 @@ export default function MiniHeader() {
             <ul className={"flex flex-row justify-center items-center"}>
                 {menuItems.map((item, index) => (
                         <li key={index} className={"text-center mx-3 hover:font-bold"}>
-                            <a target="_blank" href={item.link}>{item.name}</a>
+                            <a target="_blank" rel="noopener noreferrer" href={item.link}>{item.name}</a>
                         </li>)
                 )}
             </ul>
