@@ -12,15 +12,12 @@ export default function Header() {
 
     return (
         <header
-            className="bg-[#00693c] rounded-bl-[330px_200px] rounded-br-[4000px_200px] w-full p-2 text-white px-14 h-[16vh]">
-            <div className="justify-between flex items-center py-3 mb-14">
+            className="bg-[#00693c] w-full p-2 text-white px-14 h-24">
+            <div className="justify-between flex items-center mb-14">
                 <h1 className="text-6xl font-bold ml-10"><a href="/">GreenPoint</a></h1>
 
                 <nav className="mr-2">
                     <ul className="flex space-x-4">
-                        <li className="mt-6">
-                            <SearchBar/>
-                        </li>
                         <li className="mt-6 mr-8"><DropdownMenu>
                             <DropdownMenuTrigger asChild>
                                 <a className="hover:text-white text-[#003811] text-2xl font-bold ">Quicklinks</a>
