@@ -6,8 +6,6 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import SearchBar from "@/Components/SearchBar.jsx";
-
 export default function Header() {
 
     return (
