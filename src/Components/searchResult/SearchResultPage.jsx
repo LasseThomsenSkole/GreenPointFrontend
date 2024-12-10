@@ -1,7 +1,10 @@
 import ResultCard from "@/Components/searchResult/ResultCard.jsx";
+import {useEffect, useState} from "react";
 
 export default function SearchResultPage(){
-    const results = [
+    const [searchResults, setSearchResults] = useState([]); // comment det her ud for at bruge den hardcodede data
+    /*  uncomment det her for at bruge hardcoded data
+    const searchResults = [
         {
             title: "Introduction to Optometry",
             description: "Learn the basics of optometry, including eye anatomy and vision science.",
@@ -58,12 +61,33 @@ export default function SearchResultPage(){
             startTime: "11:00",
             endTime: "13:00",
         },
-    ];
+    ];*/
+    async function search(keyword) {
+        try {
+            const [coursesResponse, postsResponse] = await Promise.all([
+                fetch(`http://localhost:8080/course/search?keyword=${encodeURIComponent(keyword)}&size=10&page=1`),
+                fetch(`http://localhost:8080/news/search?keyword=${encodeURIComponent(keyword)}&size=10&page=1`),
+            ]);
+
+            const courses = await coursesResponse.json();
+            const posts = await postsResponse.json();
+
+            return [...courses.content, ...posts.content];
+        } catch (error) {
+            console.error("Error fetching search results:", error);
+            return [];
+        }
+    }
+    useEffect(() => {
+        search("post").then(results => {
+            setSearchResults(results);
+        });
+    }, []);
 
     return (
         <div className={"flex flex-col justify-center items-center"}>
             <h1>Search Result Page</h1>
-            {results.map((result, index) => (
+            {searchResults.map((result, index) => (
                 <ResultCard key={index} result={result} />))}
         </div>
     )
