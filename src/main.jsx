@@ -6,6 +6,7 @@ import Frontpage from './Components/Frontpage.jsx'
 import LoginPage from "./Components/LoginPage.jsx";
 import ContactsPage from './Components/ContactsPage.jsx'
 import CalendarPage from "@/Components/CalendarPage.jsx";
+import SearchResultPage from "@/Components/searchResult/SearchResultPage.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
                 <Route path="/login" element={<LoginPage/>}/>
                 <Route path="/kalender" element={<CalendarPage/>}/>
                 <Route path="/contacts" element={<ContactsPage/>}/>
+                <Route path="/result" element={<SearchResultPage/>}/>
             </Routes>
         </BrowserRouter>
     </StrictMode>,
