@@ -1,5 +1,6 @@
 import ResultCard from "@/Components/searchResult/ResultCard.jsx";
 import {useEffect, useState} from "react";
+import {useSearchParams} from "react-router";
 
 export default function SearchResultPage(){
     const [searchResults, setSearchResults] = useState([]); // comment det her ud for at bruge den hardcodede data
@@ -62,6 +63,8 @@ export default function SearchResultPage(){
             endTime: "13:00",
         },
     ];*/
+    const [searchParams] = useSearchParams();
+    const keyword = searchParams.get("keyword");
     async function search(keyword) {
         try {
             const [coursesResponse, postsResponse] = await Promise.all([
@@ -79,7 +82,7 @@ export default function SearchResultPage(){
         }
     }
     useEffect(() => {
-        search("post").then(results => {
+        search(keyword).then(results => {
             setSearchResults(results);
         });
     }, []);
