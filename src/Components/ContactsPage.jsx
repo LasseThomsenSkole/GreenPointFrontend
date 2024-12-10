@@ -1,4 +1,4 @@
-import Header from './Header.jsx'
+import Header from './header/Header.jsx'
 import {
     ContactsSearch
 } from "@/Components/ContactsSearch.jsx";

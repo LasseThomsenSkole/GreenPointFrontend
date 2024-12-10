@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {Calendar} from "@/components/ui/calendar.jsx"
-import Header from "@/Components/Header.jsx";
+import Header from "@/Components/header/Header.jsx";
 import CourseList from "@/Components/CourseList.jsx"
 
 export default function CalendarPage() {

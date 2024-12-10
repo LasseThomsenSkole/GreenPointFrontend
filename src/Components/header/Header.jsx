@@ -5,14 +5,14 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/Components/ui/dropdown-menu.jsx"
 export default function Header() {
 
     return (
         <header
             className="bg-[#00693c] w-full p-2 text-white px-14 h-24">
             <div className="justify-between flex items-center mb-14">
-                <h1 className="text-6xl font-bold ml-10"><a href="/">GreenPoint</a></h1>
+                <h1 className="text-6xl font-bold ml-10"><a href="/public">GreenPoint</a></h1>
 
                 <nav className="mr-2">
                     <ul className="flex space-x-4">

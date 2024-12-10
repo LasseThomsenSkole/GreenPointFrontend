@@ -1,4 +1,4 @@
-import Header from "./Header.jsx"
+import Header from "./header/Header.jsx"
 import {ScrollArea} from "@radix-ui/react-scroll-area";
 import NewsList from "@/Components/NewsList.jsx";
 import {useEffect, useState} from "react";
