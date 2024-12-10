@@ -13,48 +13,48 @@ export default function Header() {
             className="bg-[#00693c] w-full p-2 text-white px-14 h-24">
             <div className="justify-between flex items-center mb-14">
                 <h1 className="text-6xl font-bold ml-10"><a href="/public">GreenPoint</a></h1>
-
                 <nav className="mr-2">
                     <ul className="flex space-x-4">
-                        <li className="mt-6 mr-8"><DropdownMenu>
-                            <DropdownMenuTrigger asChild>
-                                <a className="hover:text-white text-[#003811] text-2xl font-bold ">Quicklinks</a>
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent>
-                                <div className="block w-full">
-                                    <DropdownMenuItem><a>Nødsituationer</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a>Digital
-                                        rekvisition</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a>B2B</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a>Scalepoint</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a>InMoment</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a href="https://merchantportal.resurs.com/login"
-                                                         target="_blank"
-                                                         rel="noopener noreferrer">Resurs
-                                        Bank</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a>Teamviewer</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a href="https://specsavers.service-now.com/specsavers"
-                                                         target="_blank"
-                                                         rel="noopener noreferrer">ServiceNow</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a href="https://omdeling.info/leveringerleverandoerstatus/"
-                                                         target="_blank"
-                                                         rel="noopener noreferrer">DAO</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a href="https://mydhl.express.dhl/dk/da/auth/login.html"
-                                                         target="_blank"
-                                                         rel="noopener noreferrer">myDHL+</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a>Lokal
-                                        Marketing</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a href="https://louisnielsen.ths.cloud"
-                                                         target="_blank"
-                                                         rel="noopener noreferrer">Harmony</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a href="http://intranet/daglig.php"
-                                                         target="_blank"
-                                                         rel="noopener noreferrer">Daglig
-                                        omsætning</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                    <DropdownMenuItem><a>Kontaktlinseleverandøre</a></DropdownMenuItem>
-                                </div>
-                            </DropdownMenuContent>
-                        </DropdownMenu></li>
+                        <li className="mt-6 mr-8">
+                            <DropdownMenu>
+                                <DropdownMenuTrigger asChild>
+                                    <a className="hover:text-white text-[#003811] text-2xl font-bold ">Quicklinks</a>
+                                </DropdownMenuTrigger>
+                                <DropdownMenuContent>
+                                    <div className="block w-full">
+                                        <DropdownMenuItem><a>Nødsituationer</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a>Digital
+                                            rekvisition</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a>B2B</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a>Scalepoint</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a>InMoment</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a href="https://merchantportal.resurs.com/login"
+                                                             target="_blank"
+                                                             rel="noopener noreferrer">Resurs
+                                            Bank</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a>Teamviewer</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a href="https://specsavers.service-now.com/specsavers"
+                                                             target="_blank"
+                                                             rel="noopener noreferrer">ServiceNow</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a href="https://omdeling.info/leveringerleverandoerstatus/"
+                                                             target="_blank"
+                                                             rel="noopener noreferrer">DAO</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a href="https://mydhl.express.dhl/dk/da/auth/login.html"
+                                                             target="_blank"
+                                                             rel="noopener noreferrer">myDHL+</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a>Lokal
+                                            Marketing</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a href="https://louisnielsen.ths.cloud"
+                                                             target="_blank"
+                                                             rel="noopener noreferrer">Harmony</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a href="http://intranet/daglig.php"
+                                                             target="_blank"
+                                                             rel="noopener noreferrer">Daglig
+                                            omsætning</a></DropdownMenuItem><DropdownMenuSeparator/>
+                                        <DropdownMenuItem><a>Kontaktlinseleverandøre</a></DropdownMenuItem>
+                                    </div>
+                                </DropdownMenuContent>
+                            </DropdownMenu></li>
 
                         <li className="mt-3">
                             <a href="/kalender"
@@ -89,8 +89,10 @@ export default function Header() {
                                 </DropdownMenuItem>
                                 <DropdownMenuSeparator/>
                                 <DropdownMenuItem>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                         strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
                                     </svg>
                                     <a href="/contacts">Kontaktinfo</a></DropdownMenuItem>
                                 <DropdownMenuSeparator/>
