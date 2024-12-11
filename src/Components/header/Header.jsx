@@ -6,6 +6,9 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/Components/ui/dropdown-menu.jsx"
+import brille1 from "@/assets/brille1.png";
+import brille2 from "@/assets/brille2.png";
+import brille3 from "@/assets/brille3.png";
 export default function Header() {
 
     return (
@@ -86,7 +89,10 @@ export default function Header() {
                         </DropdownMenu></li>
                     </ul>
                 </nav>
-                <div className="absolute inset-0 bg-[#009552] bg-opacity-10 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-[#009552] bg-opacity-10 pointer-events-none">
+                    <img src={brille1}  alt="left image" className="opacity-80 absolute bottom-[160px] left-0 transform rotate-[30deg] origin-bottom-left w-80 h-48 pointer-events-none overflow-hidden"/>
+                    <img src={brille3}  alt="left top image" className="opacity-80 absolute bottom-[300px] left-[15px] transform -rotate-12 origin-bottom-left w-80 h-48 pointer-events-none overflow-hidden"/>
+                </div>
             </div>
         </header>
 
