@@ -7,7 +7,7 @@ import MiniHeader from "@/Components/MiniHeader.jsx";
 
 export default function Frontpage() {
     const [news, setNews] = useState([]) // skal muligvis være et andet sted ?
-    const [role, setRole] = useState("USER");
+    const [role, setRole] = useState("USER"); //user for nu, så vi kan se det på 5174
 
     useEffect(() => {
         fetch("http://localhost:8080/news/search")
@@ -18,8 +18,7 @@ export default function Frontpage() {
     const quicklinks = {
         USER: [
             { label: "Nødsituation", href: "#" },
-            { label: "Digital B2B", href: "#" },
-            { label: "Scalepoint", href: "#" },
+            { label: "Scalepoint", href: "https://validationportal.scalepoint.eu/" },
             { label: "Resurs Bank", href: "https://merchantportal.resurs.com/login" },
             { label: "Resurs Bank - Højere Kredit", href: "#" },
             { label: "DAO", href: "https://omdeling.info/leveringerleverandoerstatus/" },
