@@ -74,8 +74,9 @@ export default function Frontpage() {
 
                                 Fra uge to og frem vil vi for at skabe kendskab til Louis Nielsen køre en helt ny “Sku’ ha’ gået til”-kampagne. Et nyt spot vises på TV og – som noget nyt - også i biograf, hvor vi også har et samarbejde med Biospil.</p>
                         </ScrollArea>
-                        <div className="flex flex-col justify-between w-[270px] mt-4 p-3 bg-[#00693c] bg-opacity-100 rounded-xl">
-                        <h2 className="text-3xl font-bold text-[#003811] mb-4">Quicklinks</h2>
+                        <div className="flex justify-between gap-2">
+                        <div className="flex flex-col w-[270px] mt-4 p-3 bg-[#007446] rounded-xl">
+                        <h2 className="text-3xl font-bold text-[#002E0F] mb-4">Quicklinks</h2>
                         <ul>
                             {quicklinks[role].map((link, index) => (
                                 <li key={index} className="mb-2">
@@ -83,13 +84,17 @@ export default function Frontpage() {
                                         href={link.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-lg text-[#003811] font-semibold hover:font-extrabold"
+                                        className="text-lg text-[#002E0F] font-semibold hover:font-extrabold"
                                     >
                                         {link.label}
                                     </a>
                                 </li>
                             ))}
                         </ul>
+                        </div>
+                            <div className="flex flex-col p-3">
+                            her er der omsætningstal
+                            </div>
                         </div>
                     </div>
                 </div>
