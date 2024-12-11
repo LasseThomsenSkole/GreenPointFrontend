@@ -31,7 +31,7 @@ export default function CourseList({onCourseClick}) {
 
 
     // hardcoded - skal slettes mici
-    const coursesData = [
+   /* const coursesData = [
         {
             id: 1,
             title: 'Intro for nye elver',
@@ -91,17 +91,18 @@ export default function CourseList({onCourseClick}) {
             endTime: '17:00',
             location: 'Aalborg',
             jobTitle: 'IN_STORE_TRAINER',}
-    ];
+    ];*/
 
 
     return (
         <>
-            {/*mangler buttons til tilmelding - onclick virker ikke*/}
-            <h1 className="text-4xl text-[#003811] font-bold mb-2">Kursusliste</h1>
+            {/*onclick virker ikke*/}
+            <h1 className="text-4xl text-[#003811] font-bold mb-2 ml-4">Kursusliste</h1>
             <ScrollArea className="scrollbar-custom-courses flex flex-col h-[75vh] w-full rounded-xl p-4 overflow-y-auto">
                 {coursesData.map((course, index) => (
-                    <div  className="rounded-md w-full shadow-xl my-2 border border-[#003811] p-2 bg-white" key={course.id || index}
+                    <div  className="rounded-md w-full shadow-xl my-2 border border-[#003811] p-2 bg-white" key={course.id}
                           onClick={() => onCourseClick(course.date)}>
+
                         <h2 className="font-bold text-[#003811]">{course.title}</h2>
                         <p className="font-semibold text-gray-400 text-sm">{jobTitleMap[course.jobTitle]}</p>
                         <p className="flex items-center text-gray-400">
@@ -116,8 +117,8 @@ export default function CourseList({onCourseClick}) {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                             </svg>
                             {course.location}</p>
-                        {/*<p className="text-[#003811]">{course.description}</p>*/}
                     </div>
+
                 ))}
             </ScrollArea>
         </>

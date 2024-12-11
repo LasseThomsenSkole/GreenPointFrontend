@@ -17,7 +17,7 @@ export default function Frontpage() {
             <Header/>
             <MiniHeader/>
             <main className={"flex justify-center"}>
-                <div className="flex gap-8 max-w-6xl h-[85vh] justify-center bg-amber-50">
+                <div className="flex gap-8 max-w-6xl h-[85vh] justify-center bg-transparent">
                     <ScrollArea className="flex flex-col h-[75vh] w-1/3 rounded-xl p-4 bg-white overflow-y-auto scrollbar-thin my-8">
                         <NewsList news={news}/>
                     </ScrollArea>

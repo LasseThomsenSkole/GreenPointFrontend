@@ -15,12 +15,12 @@ function Calendar({
     return (
         <DayPicker
             showOutsideDays={showOutsideDays}
-            className={cn("p-3", className)}
+            className={cn("p-3 w-full mb-5 border-2", className)}
             classNames={{
                 months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 text-[#003811]",
                 month: "space-y-4",
-                caption: "flex items-center justify-between w-full relative pt-1",
-                caption_label: "text-2xl font-medium text-[#003811] flex-1 text-center flex justify-center",
+                caption: "flex items-center justify-center w-full relative pt-1",
+                caption_label: "text-2xl font-medium text-[#003811] flex-1 text-center",
                 nav: "absolute flex justify-between items-center",
                 nav_button: cn(
                     buttonVariants({ variant: "outline" }),
@@ -29,9 +29,8 @@ function Calendar({
                 nav_button_previous: "left-0",
                 nav_button_next: "right-0",
                 table: "w-full border-collapse space-y-1",
-                head_row: "flex",
-                head_cell:
-                    "text-muted-foreground rounded-md w-9 font-normal text-[#003811] text-xl",
+                head_row: "grid grid-cols-7 gap-2 mb-2 text-center",
+                head_cell: "w-12 text-center font-normal text-[#003811] text-xl",
                 row: "flex w-full mt-2",
                 cell: "h-12 w-12 text-center p-5 text-2xl relative [&:has([aria-selected].day-range-end)]:rounded-r-md [&:has([aria-selected].day-outside)]:bg-accent/50 [&:has([aria-selected])]:bg-accent first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20",
                 day: cn(

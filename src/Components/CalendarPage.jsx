@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import {Calendar} from "@/components/ui/calendar.jsx"
 import Header from "@/Components/header/Header.jsx";
 import CourseList from "@/Components/CourseList.jsx"
+import MiniHeader from "@/Components/MiniHeader.jsx";
+import {cn} from "@/lib/utils.js";
 
 export default function CalendarPage() {
     const [date, setDate] = useState(new Date());
@@ -20,23 +22,43 @@ export default function CalendarPage() {
             .catch((error) => console.error("Errormessage", error))
     }, []);
 
-
-    //chatgpt
-    // Filter courses based on the selected date
     useEffect(() => {
-        const filtered = courses.filter(
-            (course) => new Date(course.date).toLocaleDateString() === selectedDate.toLocaleDateString()
-        );
+        const filtered = courses.filter((course) => {
+            const courseDate = new Date(course.date);
+            return (
+                courseDate.getFullYear() === selectedDate.getFullYear() &&
+                courseDate.getMonth() === selectedDate.getMonth() &&
+                courseDate.getDate() === selectedDate.getDate()
+            );
+        });
         setFilteredCourses(filtered);
-    }, [selectedDate, courses]); // Re-run filtering when courses or selectedDate change
+    }, [selectedDate, courses]);
+
+
+
+    /* const getUserId = () => {
+         try {
+             const userId = localStorage.getItem("jwtToken", token);
+         }
+     }*/
+
+
+    const registerUser = (courseId) => {
+        const userId = getUserId();
+        if (!userId) {
+            alert("User not logged in!");
+            return;
+        }
+    }
 
 
     return (
         <>
             <Header/>
-            <div className="justify-between gap-20 flex ml-20 mr-20 mt-8">
+            <MiniHeader/>
+            <div className="justify-center mx-80 flex mt-8">
                 <div className="flex flex-col w-full">
-            <Calendar mode="single" selected={date} onSelect={setDate} className="rounded-xl mb-5"/>
+            <Calendar mode="single" selected={date} onSelect={setSelectedDate} />
                     <h3 className="text-3xl font-semibold text-[#003811] mb-2">Kurser d. {selectedDate.toLocaleDateString()}</h3>
 
                     {filteredCourses.length > 0 ? (
@@ -55,6 +77,7 @@ export default function CalendarPage() {
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                         </svg>{course.location}</p>
                     <p>{course.description}</p>
+                                    <button className="bg-red-500 flex border rounded-xl p-3" onClick={() => registerUser(course.id)}>Tilmeld</button>
                 </div>
                             ))):(
                                     <p>Der er desværre ingen kurser denne dato</p>
