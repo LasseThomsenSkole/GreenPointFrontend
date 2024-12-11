@@ -99,7 +99,7 @@ export default function CourseList({onCourseClick}) {
             {/*onclick virker ikke*/}
             <h1 className="text-4xl text-[#003811] font-bold mb-2 ml-4">Kursusliste</h1>
             <ScrollArea className="scrollbar-custom-courses flex flex-col h-[75vh] w-full rounded-xl p-4 overflow-y-auto">
-                {coursesData.map((course, index) => (
+                {courses.map((course, index) => (
                     <div  className="rounded-md w-full shadow-xl my-2 border border-[#003811] p-2 bg-white" key={course.id}
                           onClick={() => onCourseClick(course.date)}>
 

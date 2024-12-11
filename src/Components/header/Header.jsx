@@ -12,50 +12,9 @@ export default function Header() {
         <header
             className="bg-[#00693c] w-full p-2 text-white px-14 h-24">
             <div className="justify-between flex items-center mb-14">
-                <h1 className="text-6xl font-bold ml-10"><a href="/public">GreenPoint</a></h1>
+                <h1 className="text-6xl font-bold ml-10"><a href="/">GreenPoint</a></h1>
                 <nav className="mr-2">
                     <ul className="flex space-x-4">
-                        <li className="mt-6 mr-8">
-                            <DropdownMenu>
-                                <DropdownMenuTrigger asChild>
-                                    <a className="hover:text-white text-[#003811] text-2xl font-bold ">Quicklinks</a>
-                                </DropdownMenuTrigger>
-                                <DropdownMenuContent>
-                                    <div className="block w-full">
-                                        <DropdownMenuItem><a>Nødsituationer</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a>Digital
-                                            rekvisition</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a>B2B</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a>Scalepoint</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a>InMoment</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a href="https://merchantportal.resurs.com/login"
-                                                             target="_blank"
-                                                             rel="noopener noreferrer">Resurs
-                                            Bank</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a>Teamviewer</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a href="https://specsavers.service-now.com/specsavers"
-                                                             target="_blank"
-                                                             rel="noopener noreferrer">ServiceNow</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a href="https://omdeling.info/leveringerleverandoerstatus/"
-                                                             target="_blank"
-                                                             rel="noopener noreferrer">DAO</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a href="https://mydhl.express.dhl/dk/da/auth/login.html"
-                                                             target="_blank"
-                                                             rel="noopener noreferrer">myDHL+</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a>Lokal
-                                            Marketing</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a href="https://louisnielsen.ths.cloud"
-                                                             target="_blank"
-                                                             rel="noopener noreferrer">Harmony</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a href="http://intranet/daglig.php"
-                                                             target="_blank"
-                                                             rel="noopener noreferrer">Daglig
-                                            omsætning</a></DropdownMenuItem><DropdownMenuSeparator/>
-                                        <DropdownMenuItem><a>Kontaktlinseleverandøre</a></DropdownMenuItem>
-                                    </div>
-                                </DropdownMenuContent>
-                            </DropdownMenu></li>
-
                         <li className="mt-3">
                             <a href="/kalender"
                                target="_blank"
